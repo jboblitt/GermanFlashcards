@@ -1,7 +1,7 @@
 GermanFlashcards
 ================
 
-Android application that allows the user to create flashcards.  
+Android application that allows users to create flashcards and maintain decks.  
 
 Details
 ------
