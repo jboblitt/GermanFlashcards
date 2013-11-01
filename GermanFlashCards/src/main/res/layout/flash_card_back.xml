@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout_MainFlashCardBack"
+        style="@style/FlashCardBackgroundBack">
+
+    <TextView
+            android:id="@+id/TextView_MainFlashCardBackTile"
+            style="@style/FlashCardTextTitle"
+            android:text="@string/card_back_title"/>
+
+    <TextView
+            android:id="@+id/TextView_MainFlashCardBackDescription"
+            style="@style/FlashCardTextDescription"
+            android:text="@string/card_back_description"/>
+
+</LinearLayout>

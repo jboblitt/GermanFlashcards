@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_flashcard_height">266dp</dimen>
+    <dimen name="activity_flashcard_width">400dp</dimen>
+    <dimen name="activity_flashcard_margin">50dp</dimen>
+    <dimen name="dim_main_navigation_list_row_root_margin">5dp</dimen>
+
+    <dimen name="dim_ListBasic_Icon_margin">10dp</dimen>
+    <dimen name="dim_ListBasic_TitleOffset">10dp</dimen>
+    <dimen name="dim_ListBasic_root_margin">10dp</dimen>
+</resources>

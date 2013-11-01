@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">German Flash Cards</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">share</string>
+    <string name="main_welcome">Welcome to German Flash Cards. Begin by choosing a Chapter and Section number.</string>
+    <string name="card_back_title">Back of card Title</string>
+    <string name="card_back_description">Back of card description</string>
+    <string name="card_front_title">Front of card title</string>
+    <string name="card_front_description">Front of card description</string>
+    <string name="main_flashcard_section_default">Section title</string>
+    <string name="main_flashcard_number_default">Flash number</string>
+    <string name="main_flashcard_notes">Notes</string>
+    <string name="title_activity_activity_share">Share</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

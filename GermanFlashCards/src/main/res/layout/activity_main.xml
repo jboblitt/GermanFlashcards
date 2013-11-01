@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ActivityMain">
+
+    <ListView
+        android:id="@+id/ListView_ActivityMainNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_MainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ListView_ActivityMainNavigation"
+        android:layout_margin="20dp"
+        android:background="@drawable/drawable_layout_outline">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_MainSectionAndFlashNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView_Card_SectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/main_flashcard_section_default">
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView_Card_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/TextView_Card_SectionTitle"
+                android:text="@string/main_flashcard_number_default">
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TextView_Card_Notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/main_flashcard_notes">
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_ActivityMain_CardFeatures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/TextView_Card_Notes">
+
+            <com.jbslade.flashcards.language.german.ui.AudioRecordView
+                android:id="@+id/Button_Card_RecordAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Record">
+            </com.jbslade.flashcards.language.german.ui.AudioRecordView>
+
+            <com.jbslade.flashcards.language.german.ui.AudioPlayView
+                android:id="@+id/Button_Card_PlayAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Button_Card_RecordAudio"
+                android:layout_centerVertical="true">
+            </com.jbslade.flashcards.language.german.ui.AudioPlayView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ImageView_Card_Picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/RelativeLayout_ActivityMain_CardFeatures"
+            android:background="@drawable/ic_action_camera">
+        </ImageView>
+
+        <FrameLayout
+            android:id="@+id/FrameLayout_MainFragmentContainer"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/RelativeLayout_MainSectionAndFlashNumber"
+            android:layout_above="@id/ImageView_Card_Picture">
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

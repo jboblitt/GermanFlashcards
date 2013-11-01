@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_main_navigation_list_row_root_margin"
+                android:layout_marginBottom="@dimen/dim_main_navigation_list_row_root_margin"
+                android:layout_marginRight="@dimen/dim_main_navigation_list_row_root_margin">
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView_NavigationList_Row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_NavigationList_ElementHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
